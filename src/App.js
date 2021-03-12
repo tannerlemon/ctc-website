@@ -14,24 +14,24 @@ function App() {
       <div className="gradient">
         <div className="navigation">
           <div className="icon">
-            <img src={fileIcon} />
+            <img alt="file icon" src={fileIcon} />
           </div>
-          <a className="navItem">about</a>
+          <div className="navItem">about</div>
         </div>
         <div className="navigation">
           <div className="icon">
-            <img src={messageIcon} />
+            <img alt="message icon" src={messageIcon} />
           </div>
-          <a className="navItem">contact</a>
+          <div className="navItem">contact</div>
         </div>
         <div className="navigation">
           <div className="icon">
-            <img src={calendarIcon} />
+            <img alt="calendar icon" src={calendarIcon} />
           </div>
-          <a className="navItem">events</a>
+          <div className="navItem">events</div>
         </div>
         <div className="logo">
-          <img src={logo} />
+          <img alt="Communities That Care logo" src={logo} />
         </div>
         <h1 className="name">
           <span className="communities">communities</span> <br />
