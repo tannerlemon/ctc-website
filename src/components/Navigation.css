@@ -1,0 +1,55 @@
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 7vw 0 0 7vw;
+  cursor: pointer;
+}
+
+.icon {
+  width: 7vw;
+  padding-right: 4vw;
+}
+
+.navItem {
+  font-size: 7vw;
+  font-weight: 700;
+  transition: 0.12s ease;
+}
+
+.logo {
+  width: 25vw;
+  padding: 10vw 0 0 7vw;
+}
+
+.name {
+  padding: 0 0 7vw 7vw;
+  margin-top: -10vw;
+}
+.communities {
+  font-size: 12vw;
+  line-height: 0;
+}
+
+.that {
+  font-size: 15vw;
+  line-height: 0;
+}
+
+.care {
+  font-size: 25vw;
+  line-height: 0;
+  margin-bottom: 0;
+}
+
+.navItem:hover {
+  font-size: 8vw;
+}

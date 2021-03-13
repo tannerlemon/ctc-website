@@ -1,3 +1,41 @@
 .sliderWrapper {
   width: 100vw;
+  background: #fff;
+  height: 97vh;
+  z-index: 100;
+  border-radius: 12px 12px 0 0;
+  color: "#281111";
+  overflow: scroll;
+}
+
+.cancel {
+  position: absolute;
+  width: 7vw;
+  cursor: pointer;
+  right: 4vw;
+  top: 4vw;
+  transition: 0.4s ease-in-out;
+}
+
+.cancel:hover {
+  width: 8vw;
+}
+
+.background {
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title {
+  margin: 0 0 6vw 0;
+}
+
+.info {
+  margin-top: 2vw;
+  color: #281111;
+  padding: 5vw;
 }
