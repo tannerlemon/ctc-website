@@ -17,18 +17,22 @@ export default function Navigation({ handleShowOverlay }) {
           <div className="navItem">about</div>
         </div>
       </Link>
-      <div className="navigation">
-        <div className="icon">
-          <img alt="message icon" src={messageIcon} />
+      <Link to="/contact" className="Link">
+        <div className="navigation" onClick={() => handleShowOverlay()}>
+          <div className="icon">
+            <img alt="message icon" src={messageIcon} />
+          </div>
+          <div className="navItem">contact</div>
         </div>
-        <div className="navItem">contact</div>
-      </div>
-      <div className="navigation">
-        <div className="icon">
-          <img alt="calendar icon" src={calendarIcon} />
+      </Link>
+      <Link to="/events" className="Link">
+        <div className="navigation" onClick={() => handleShowOverlay()}>
+          <div className="icon">
+            <img alt="calendar icon" src={calendarIcon} />
+          </div>
+          <div className="navItem">events</div>
         </div>
-        <div className="navItem">events</div>
-      </div>
+      </Link>
       <div className="logo">
         <img alt="Communities That Care logo" src={logo} />
       </div>
