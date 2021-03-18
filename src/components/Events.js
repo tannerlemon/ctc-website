@@ -68,7 +68,6 @@ export default function Events() {
         <span className="title">events</span>
       </h1>
       <Switch>
-        <Route exact path="/events" />
         <div className="info">
           <h2>coming soon</h2>
 

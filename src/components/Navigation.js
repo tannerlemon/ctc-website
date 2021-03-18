@@ -33,14 +33,16 @@ export default function Navigation({ handleShowOverlay }) {
           <div className="navItem">events</div>
         </div>
       </Link>
-      <div className="logo">
-        <img alt="Communities That Care logo" src={logo} />
+      <div className="logoStuff">
+        <div className="logo">
+          <img alt="Communities That Care logo" src={logo} />
+        </div>
+        <h1 className="name">
+          <span className="communities">communities</span> <br />
+          <span className="that">that</span>
+          <span className="care">care</span>
+        </h1>
       </div>
-      <h1 className="name">
-        <span className="communities">communities</span> <br />
-        <span className="that">that</span>
-        <span className="care">care</span>
-      </h1>
     </div>
   );
 }
