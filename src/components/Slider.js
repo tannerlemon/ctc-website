@@ -3,12 +3,6 @@ import "./Slider.css";
 import { interpolate, interpolateTransformSvg } from "d3-interpolate";
 import { easeBounceOut } from "d3-ease";
 import { Animate } from "react-move";
-import About from "./About";
-import Contact from "./Contact";
-import Events from "./Events";
-import cancelIcon from "../imgs/cancel.png";
-import Navigation from "./Navigation";
-import { Switch, Route } from "react-router-dom";
 
 export default function Slider() {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -21,7 +15,6 @@ export default function Slider() {
 
   return (
     <div style={{ width: "100%" }}>
-      <Navigation handleShowOverlay={handleShowOverlay} />
       <Animate
         show={showOverlay}
         start={{
@@ -55,21 +48,7 @@ export default function Slider() {
                 position: "absolute",
                 bottom,
               }}
-            >
-              <div
-                className="cancel"
-                onClick={() => {
-                  handleCloseOverlay();
-                }}
-              >
-                <img alt="cancel icon" src={cancelIcon} />
-              </div>
-              <Switch>
-                <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/events" component={Events} />
-              </Switch>
-            </div>
+            ></div>
           );
         }}
       </Animate>

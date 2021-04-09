@@ -1,13 +1,11 @@
 import "./App.css";
 import Slider from "./components/Slider";
-import background from "./imgs/Website-Together.jpg";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div
-      className="pageWrapper"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <div>
+      <Home />
       {<Slider />}
     </div>
   );
