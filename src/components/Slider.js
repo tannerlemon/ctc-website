@@ -5,13 +5,7 @@ import { easeBounceOut } from "d3-ease";
 import { Animate } from "react-move";
 
 export default function Slider() {
-  const [showOverlay, setShowOverlay] = useState(false);
-  const handleShowOverlay = () => {
-    setShowOverlay(true);
-  };
-  const handleCloseOverlay = () => {
-    setShowOverlay(false);
-  };
+  const [showOverlay] = useState(false);
 
   return (
     <div style={{ width: "100%" }}>

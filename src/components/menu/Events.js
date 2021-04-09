@@ -57,7 +57,11 @@ export default function Events() {
               <h2>{event.title}</h2>
               <div className="button">
                 Learn more
-                <img className="rightArrow" src={rightArrow} />
+                <img
+                  alt="right arrow"
+                  className="rightArrow"
+                  src={rightArrow}
+                />
               </div>
             </div>
           );
