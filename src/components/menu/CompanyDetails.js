@@ -1,6 +1,5 @@
 import React from "react";
 import background from "../../imgs/City.jpg";
-import MenuBar from "./MenuBar";
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
 

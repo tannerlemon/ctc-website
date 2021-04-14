@@ -1,7 +1,6 @@
 import React from "react";
 import rightArrow from "../../imgs/right-arrow.png";
 import { Link } from "react-router-dom";
-import CompanyDetails from "./CompanyDetails";
 
 export default function Mission() {
   return (
