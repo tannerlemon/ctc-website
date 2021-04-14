@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 
-export default function MenuBar({ showMenu, setShowMenu }) {
+export default function MenuBar({ showMenu, setShowMenu, setShowContactForm }) {
   const closedBar = () => {
     return (
       <div className="menuBar">
@@ -39,7 +39,14 @@ export default function MenuBar({ showMenu, setShowMenu }) {
           </div>
         </div>
       )}
-      {showMenu && <Menu closedBar={closedBar} showMenu={showMenu} />}
+      {showMenu && (
+        <Menu
+          closedBar={closedBar}
+          showMenu={showMenu}
+          setShowMenu={setShowMenu}
+          setShowContactForm={setShowContactForm}
+        />
+      )}
     </div>
   );
 }

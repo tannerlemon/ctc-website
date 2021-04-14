@@ -7,6 +7,7 @@ body {
   font-family: "Nunito Sans";
   line-height: 0;
   transition: 0.7s ease;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,7 @@ a {
   background-position: center;
   background-size: cover;
   margin: 0;
+  top: 0;
 }
 
 .yellowWrapper {
@@ -186,6 +188,33 @@ a {
   display: flex;
 }
 
+.eventDetailsWrapper {
+  background: #fff;
+  overflow: scroll;
+}
+
+.eventDetails {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.close {
+  width: 10vw;
+  margin: 2vw 0;
+}
+
+.eventImage {
+  width: 20vw;
+}
+
+.eventTitleAndImage {
+  display: flex;
+}
+
+.eventTitleAndImage h2 {
+  width: 20vw;
+}
+
 .contactWrapper {
   width: 90vw;
   height: 90vh;
@@ -195,6 +224,33 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contactFormWrapper {
+  background: #fff;
+}
+
+.contactForm {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 1vw;
+  margin: 1vw 0;
+  outline: none;
+  font-family: "Nunito Sans";
+  width: 50%;
+}
+
+::placeholder {
+  font-family: "Nunito Sans";
+}
+
+div[role="alert"] {
+  color: red;
+  margin-top: 1em;
 }
 
 .footerWrapper {
@@ -289,4 +345,15 @@ a {
     font-size: 1.5vw;
     font-weight: normal;
   }
+}
+
+.back {
+  margin: 0;
+}
+
+.about {
+  height: 40vh;
+  margin: 0;
+  background-position: center;
+  padding: 1vw;
 }

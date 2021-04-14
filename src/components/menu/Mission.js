@@ -1,9 +1,11 @@
 import React from "react";
 import rightArrow from "../../imgs/right-arrow.png";
+import { Link } from "react-router-dom";
+import CompanyDetails from "./CompanyDetails";
 
 export default function Mission() {
   return (
-    <div className="aboutUs">
+    <div className="aboutUs" id="Mission">
       <h4>
         <span className="sectionLabel">about us</span> We are committed to
         making the maximum positive effort for our community. Our coalition
@@ -11,10 +13,12 @@ export default function Mission() {
         helps us affect change. Using date driven models, we provide solutions
         that make long-lasting difference.
       </h4>
-      <div className="button">
-        Learn more
-        <img className="rightArrow" src={rightArrow} alt="right arrow" />
-      </div>
+      <Link to="/about" className="Link">
+        <div className="button">
+          Learn more
+          <img className="rightArrow" src={rightArrow} alt="right arrow" />
+        </div>
+      </Link>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="aboutUs">
+    <div className="aboutUs" id="Vision">
       <h4>
         <span className="sectionLabel">about us</span> A healthy and thriving
         community working together to reduce substance abuse.

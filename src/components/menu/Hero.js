@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import background from "../../imgs/main.jpg";
 import MenuBar from "./MenuBar";
 
-export default function Hero() {
+export default function Hero({ setShowContactForm }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -11,7 +11,11 @@ export default function Hero() {
         className="pageWrapper"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <MenuBar showMenu={showMenu} setShowMenu={setShowMenu} />
+        <MenuBar
+          showMenu={showMenu}
+          setShowMenu={setShowMenu}
+          setShowContactForm={setShowContactForm}
+        />
 
         <div className="heroWrapper">
           <div className="yellowWrapper hero">

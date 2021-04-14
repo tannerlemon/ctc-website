@@ -1,8 +1,9 @@
 import React from "react";
 import background from "../../imgs/Together.jpg";
 import rightArrow from "../../imgs/right-arrow.png";
+import ContactForm from "./ContactForm";
 
-export default function Contact() {
+export default function Contact({ showContactForm, setShowContactForm }) {
   return (
     <div>
       <div
@@ -15,12 +16,15 @@ export default function Contact() {
             there's room <br />
             for you
           </h1>
-          <div className="button">
+          <div className="button" onClick={() => setShowContactForm(true)}>
             Contact us
             <img className="rightArrow" src={rightArrow} alt="right arrow" />
           </div>
         </div>
       </div>
+      {showContactForm && (
+        <ContactForm setShowContactForm={setShowContactForm} />
+      )}
     </div>
   );
 }
