@@ -8,7 +8,7 @@ export default function ContactForm({ setShowContactForm }) {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     generateContactNumber();
-    sendForm("ctc_jeremy", "default", "#contact-form").then(
+    sendForm("ctc_jeremy", "ctc", "#contact-form").then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
       },
